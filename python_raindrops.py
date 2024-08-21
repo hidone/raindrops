@@ -30,7 +30,7 @@ class RainDrop:  # تعريف كلاس يمثل قطرات المطر
     
     def draw(self):
         # رسم قطرة المطر على الشاشة كخط مستقيم
-        pygame.draw.line(screen, (0, 0, 255), (self.x, self.y), (self.x, self.y + self.length), 1)
+        pygame.draw.line(screen, (255, 255, 255), (self.x, self.y), (self.x, self.y + self.length), 1)
 
 # إنشاء قائمة تحتوي على 100 قطرة مطر
 raindrops = [RainDrop() for _ in range(100)]
